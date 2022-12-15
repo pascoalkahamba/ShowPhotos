@@ -4,6 +4,7 @@ import styles from "./AllPhotos.module.css";
 const AllPhotos = () => {
   const [photos, setPhotos] = useState(null);
   const [loading, setLoading] = useState(null);
+  const [error, setError] = useState(null);
   useEffect(() => {
     async function getPhotos() {
       const response = await fetch(
