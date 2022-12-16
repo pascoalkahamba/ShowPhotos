@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./AllPhotos.module.css";
 import Loading from "./Loading";
+import Photo from "./Photo";
 
 const AllPhotos = () => {
   const [photos, setPhotos] = useState(null);
@@ -35,9 +36,16 @@ const AllPhotos = () => {
     return (
       <section className={styles.photos}>
         {photos.map(({ id, fotos, descricao, nome, preco }) => (
-          <div key={id}>
+          <div key={id} className={styles.element}>
             {fotos.map(({ src, titulo }) => (
-              <img key={titulo} src={src} title={titulo} />
+              <Photo
+                key={titulo}
+                src={src}
+                title={titulo}
+                id={id}
+                descricao={descricao}
+                price={preco}
+              />
             ))}
             <p>{nome}</p>
           </div>
