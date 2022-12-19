@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Photo = () => {
+const Photo = ({ src, title, id }) => {
+  const [picture, setPicture] = useState(null);
   return (
     <div>
-      <Link to="/"></Link>
+      <Link to={`/produto/${id}`}>
+        <img src={src} title={title} />
+      </Link>
     </div>
   );
 };
