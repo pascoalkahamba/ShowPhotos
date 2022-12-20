@@ -35,18 +35,9 @@ const AllPhotos = () => {
   if (photos)
     return (
       <section className={styles.photos}>
-        {photos.map(({ id, fotos, descricao, nome, preco }) => (
+        {photos.map(({ id, fotos, nome }) => (
           <div key={id} className={styles.element}>
-            {fotos.map(({ src, titulo }) => (
-              <Photo
-                key={titulo}
-                src={src}
-                title={titulo}
-                id={id}
-                descricao={descricao}
-                price={preco}
-              />
-            ))}
+            <Photo fotos={fotos} nome={nome} />
             <p>{nome}</p>
           </div>
         ))}
