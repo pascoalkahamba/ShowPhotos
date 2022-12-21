@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+a {
+  background: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #000;
+  transition: 3s;
+}
+a:hover {
+  color: #000;
+  background: rgb(219, 219, 219);
+}
