@@ -22,3 +22,8 @@
   background: #ddd;
   margin-right: 10px;
 }
+.picture img {
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
