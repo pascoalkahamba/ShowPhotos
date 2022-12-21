@@ -1,13 +1,21 @@
 import React from "react";
 import styles from "./Contact.module.css";
+import picture from "../picture/photo.jpg";
 
 const Contact = () => {
   return (
     <div className={styles.contact}>
       <div className={styles.picture}>
-        <img src="" alt="photo of the contact" />
+        <img src={picture} alt="photo of the contact" />
       </div>
-      <div className={styles.data}></div>
+      <div className={styles.data}>
+        <p>Entre em Contato</p>
+        <ul className="itens">
+          <li>pascoal@ndondi.com</li>
+          <li>88888-8888</li>
+          <li>Rua Poli, 777</li>
+        </ul>
+      </div>
     </div>
   );
 };
