@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./AllPhotos.module.css";
+import Head from "./Head";
 import Loading from "./Loading";
 import Photo from "./Photo";
 
@@ -34,7 +35,8 @@ const AllPhotos = () => {
   if (loading) return <Loading />;
   if (photos)
     return (
-      <section className={styles.photos}>
+      <section className={`${styles.photos} animeLeft`}>
+        <Head title="Produtos" />
         {photos.map(({ id, fotos, nome }) => (
           <div key={id} className={styles.element}>
             <Photo fotos={fotos} nome={nome} />

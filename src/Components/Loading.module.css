@@ -1,0 +1,18 @@
+.loading {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border: 20px solid #eee;
+  border-right-color: transparent;
+  transform: rotate(90deg);
+  animation: loading infinite;
+  border-radius: 100%;
+}
+@keyframes loading {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}

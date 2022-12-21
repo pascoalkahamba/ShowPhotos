@@ -9,9 +9,8 @@
 
 .animeLeft {
   opacity: 0;
-  margin-left: 0;
-  transform: translateX(-100deg);
-  animation: animeLeft 3s forwards;
+  transform: translateX(-20px);
+  animation: animeLeft 0.3s forwards;
 }
 @keyframes animeLeft {
   to {

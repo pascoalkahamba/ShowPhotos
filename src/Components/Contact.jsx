@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./Contact.module.css";
 import picture from "../picture/photo.jpg";
+import Head from "./Head";
 
 const Contact = () => {
   return (
-    <div className={styles.contact}>
+    <div className={`${styles.contact} animeLeft`}>
+      <Head title="Contato" />
       <div className={styles.picture}>
         <img src={picture} alt="photo of the contact" />
       </div>
