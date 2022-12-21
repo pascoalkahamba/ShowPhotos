@@ -10,7 +10,7 @@ const Contact = () => {
       </div>
       <div className={styles.data}>
         <p>Entre em Contato</p>
-        <ul className="itens">
+        <ul className={styles.itens}>
           <li>pascoal@ndondi.com</li>
           <li>88888-8888</li>
           <li>Rua Poli, 777</li>

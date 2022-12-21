@@ -8,7 +8,7 @@ import Contact from "./Components/Contact";
 
 function App() {
   return (
-    <div className="App asnimeLeft">
+    <div className="App  ">
       <BrowserRouter>
         <Header />
         <Routes>
