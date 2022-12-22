@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./AllPhotos.module.css";
 import Head from "./Head";
 import Loading from "./Loading";
-import Photo from "./Photo";
 
 const AllPhotos = () => {
   const [photos, setPhotos] = useState(null);
@@ -35,13 +35,13 @@ const AllPhotos = () => {
   if (loading) return <Loading />;
   if (photos)
     return (
-      <section className={`${styles.photos} animeLeft`}>
+      <section className={`${styles.photos} animeLeft container`}>
         <Head title="Produtos" />
         {photos.map(({ id, fotos, nome }) => (
-          <div key={id} className={styles.element}>
-            <Photo fotos={fotos} nome={nome} />
-            <p>{nome}</p>
-          </div>
+          <Link className={styles.link} to={`/produto/${id}`} key={id}>
+            <img src={fotos[0].src} alt={fotos[0].titulo} />
+            <h1 className={styles.nome}>{nome}</h1>
+          </Link>
         ))}
       </section>
     );

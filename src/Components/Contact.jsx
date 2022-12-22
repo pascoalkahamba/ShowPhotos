@@ -5,9 +5,9 @@ import Head from "./Head";
 
 const Contact = () => {
   return (
-    <div className={`${styles.contact} animeLeft`}>
-      <Head title="Contato" />
+    <div className={`${styles.contact} animeLeft container`}>
       <div className={styles.picture}>
+        <Head title="Contato" />
         <img src={picture} alt="photo of the contact" />
       </div>
       <div className={styles.data}>

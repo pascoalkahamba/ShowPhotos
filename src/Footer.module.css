@@ -1,0 +1,12 @@
+.footer {
+  display: block;
+  width: 16rem;
+  height: 5rem;
+  margin: 1rem auto;
+  box-sizing: border-box;
+}
+.footer p {
+  text-align: center;
+  font-style: italic;
+  color: rgb(172, 169, 169);
+}

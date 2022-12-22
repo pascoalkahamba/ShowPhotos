@@ -8,13 +8,13 @@ import Contact from "./Components/Contact";
 
 function App() {
   return (
-    <div className="App  ">
+    <div className="App">
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<AllPhotos />} />
           <Route path="contato" element={<Contact />} />
-          <Route path="produto/*" element={<Photo />} />
+          <Route path="produto/:id" element={<Photo />} />
         </Routes>
         <Footer />
       </BrowserRouter>

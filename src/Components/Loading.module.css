@@ -1,18 +1,13 @@
 .loading {
-  display: block;
-  width: 3rem;
-  height: 3rem;
-  border: 20px solid #eee;
+  width: 20px;
+  height: 20px;
+  border: 10px solid #ccc;
   border-right-color: transparent;
-  transform: rotate(90deg);
-  animation: loading infinite;
-  border-radius: 100%;
+  animation: loading 1s infinite;
+  border-radius: 50%;
 }
 @keyframes loading {
-  from {
-    transform: rotate(90deg);
-  }
   to {
-    transform: rotate(90deg);
+    transform: rotate(360deg);
   }
 }

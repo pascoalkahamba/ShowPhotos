@@ -4,10 +4,21 @@ import styles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <div className={styles.header}>
-      <NavLink to="/">Produtos</NavLink>
-      <NavLink to="/contato">Contato</NavLink>
-    </div>
+    <nav className={styles.header}>
+      <ul>
+        <li>
+          <NavLink className={styles.link} to="/" end>
+            Produtos
+          </NavLink>
+        </li>
+        <li>
+          {" "}
+          <NavLink className={styles.link} to="/contato">
+            Contato
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
