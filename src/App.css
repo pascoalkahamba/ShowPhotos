@@ -10,7 +10,9 @@
   min-height: calc(100vh +5rem);
 }
 img {
-  max-width: 250px;
+  max-width: 300px;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 .container {
   flex: 1;
